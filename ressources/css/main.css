@@ -1,0 +1,26 @@
+
+
+body{
+  background: #b60404;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box{
+  padding: 40px;
+  background: #fff;
+}
+
+.box h1{
+  color: #b60404;
+  text-align: center;
+}
+
+button{
+  cursor: pointer;
+  color: #fff;
+  background: #b60404;
+  border: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- my styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style 2.css">
+
+    <title>debutant vuejs</title>
+</head>
+<body>
+
+    <div class="nav-bar"></div>
+
+    <div id="app">
+        <div class="product">
+            <div class="product-image">
+                <img v-bind:src="image">
+            </div>  
+            
+            <div id="product-info">
+                <h1> {{product}} </h1>
+                <p v-if='inventory > 10'> In Stock </p>
+                <p v-else-if="inventory <= 10 && inventory > 0">Almost sold out</p>
+                <p v-else> Out of Stock </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- my script -->
+    <script src="js/jquery.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
